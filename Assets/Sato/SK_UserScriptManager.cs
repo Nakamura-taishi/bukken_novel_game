@@ -51,6 +51,9 @@ public class SK_UserScriptManager : MonoBehaviour
                 case "&rmimg":
                     SK_GameManager.Instance.imageManager.RemoveImage(words[1]);
                     break;
+                case "&choice":
+                    SK_GameManager.Instance.imageManager.ShowChoice(words[1]);
+                    break;
             }
         }
 }
