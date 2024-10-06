@@ -10,14 +10,22 @@ public class SK_ImageManager : MonoBehaviour
     [SerializeField] GameObject _backgroundObject;
     [SerializeField] Sprite _eventCG1;
     [SerializeField] Sprite _eventCG2;
-    //[SerializeField] Button _button1;
+    [SerializeField] GameObject _button1;
+    [SerializeField] GameObject _button2;
+    [SerializeField] GameObject _button3;
+    [SerializeField] Text _btx1;
+    [SerializeField] Text _btx2;
+    [SerializeField] Text _btx3;
     [SerializeField] GameObject _eventObject;
     [SerializeField] GameObject _imagePrefab;
+    public SK_ChoiceScript choiceScript;
+    int l = 0;
 
     // テキストファイルから、文字列でSpriteやGameObjectを扱えるようにするための辞書
     Dictionary<string, Sprite> _textToSprite;
     Dictionary<string, GameObject> _textToParentObject;
-    //Dictionary<string, Button> _textToButton;
+    Dictionary<string, GameObject> _textToButton;
+    Dictionary<string, Text> _textToText;
 
     // 操作したいPrefabを指定できるようにするための辞書
     Dictionary<string, GameObject> _textToSpriteObject;
@@ -28,7 +36,14 @@ public class SK_ImageManager : MonoBehaviour
         _textToSprite.Add("background1", _background1);
         _textToSprite.Add("eventCG1", _eventCG1);
         _textToSprite.Add("eventCG2", _eventCG2);
-        //_textToButton.Add("button1",_button1);
+        _textToButton = new Dictionary<string, GameObject>();
+        _textToButton.Add("button1",_button1);
+        _textToButton.Add("button2",_button2);
+        _textToButton.Add("button3",_button3);
+        _textToText = new Dictionary<string, Text>();
+        _textToText.Add("button1",_btx1);
+         _textToText.Add("button2",_btx2);
+         _textToText.Add("button3",_btx3);
 
         _textToParentObject = new Dictionary<string, GameObject>();
         _textToParentObject.Add("backgroundObject", _backgroundObject);
@@ -55,9 +70,11 @@ public class SK_ImageManager : MonoBehaviour
         Destroy(_textToSpriteObject[imageName]);
     }
     
-    public void ShowChoice(string buttonname)
+    public void ShowChoice(string buttonname, string line, string word)
     {
-        //Button button_ = _textToButton[buttonname];
-        button.SetActive(true);
+        l=int.Parse(line);
+        _textToButton[buttonname].SetActive(true);
+        choiceScript.changeline=l;
+        _textToText[buttonname].text = word;
     }
 }

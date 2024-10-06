@@ -10,8 +10,10 @@ public class SK_MainTextController : MonoBehaviour
     float _time;
     float _feedTime;
     int _sentenceLength;
+    [SerializeField] GameObject button1;
+    [SerializeField] GameObject button2;
+    [SerializeField] GameObject button3;
 
-        // Start is called before the first frame update
     void Start()
     {
         _time = 0f;
@@ -41,17 +43,21 @@ public class SK_MainTextController : MonoBehaviour
             }
         }
         // クリックされたとき、次の行へ移動
-        if (Input.GetMouseButtonUp(0))
+        if (button1.activeSelf==false && button2.activeSelf==false && button3.activeSelf==false)
         {
-            if (CanGoToTheNextLine())
+            if (Input.GetMouseButtonUp(0))
             {
-                GoToTheNextLine();
-                DisplayText();
+               if (CanGoToTheNextLine())
+               {
+                   GoToTheNextLine();
+                   DisplayText();
+               }
+               else
+               {
+                   _displayedSentenceLength = _sentenceLength;
+               }
             }
-            else
-            {
-                _displayedSentenceLength = _sentenceLength;
-            }
+            
         }
     }
 

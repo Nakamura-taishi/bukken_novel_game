@@ -52,7 +52,7 @@ public class SK_UserScriptManager : MonoBehaviour
                     SK_GameManager.Instance.imageManager.RemoveImage(words[1]);
                     break;
                 case "&choice":
-                    SK_GameManager.Instance.imageManager.ShowChoice(words[1]);
+                    SK_GameManager.Instance.imageManager.ShowChoice(words[1], words[2], words[3]);
                     break;
             }
         }
