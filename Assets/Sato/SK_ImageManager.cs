@@ -13,9 +13,11 @@ public class SK_ImageManager : MonoBehaviour
     [SerializeField] GameObject _button1;
     [SerializeField] GameObject _button2;
     [SerializeField] GameObject _button3;
+    [SerializeField] GameObject _button4;
     [SerializeField] Text _btx1;
     [SerializeField] Text _btx2;
     [SerializeField] Text _btx3;
+    [SerializeField] Text _btx4;
     [SerializeField] GameObject _eventObject;
     [SerializeField] GameObject _imagePrefab;
     public SK_ChoiceScript choiceScript;
@@ -40,10 +42,12 @@ public class SK_ImageManager : MonoBehaviour
         _textToButton.Add("button1",_button1);
         _textToButton.Add("button2",_button2);
         _textToButton.Add("button3",_button3);
+        _textToButton.Add("button4",_button4);
         _textToText = new Dictionary<string, Text>();
         _textToText.Add("button1",_btx1);
-         _textToText.Add("button2",_btx2);
-         _textToText.Add("button3",_btx3);
+        _textToText.Add("button2",_btx2);
+        _textToText.Add("button3",_btx3);
+        _textToText.Add("button4",_btx4);
 
         _textToParentObject = new Dictionary<string, GameObject>();
         _textToParentObject.Add("backgroundObject", _backgroundObject);

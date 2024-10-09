@@ -7,6 +7,7 @@ public class SK_ChoiceScript : MonoBehaviour
     public GameObject button1;
     public GameObject button2;
     public GameObject button3;
+    public GameObject button4;
     public int changeline;
     public SK_GameManager gameManager;
 
@@ -28,11 +29,18 @@ public class SK_ChoiceScript : MonoBehaviour
         button3.SetActive(false);
     }
 
+    public void OnClick4()
+    {
+        gameManager.lineNumber=changeline;
+        button4.SetActive(false);
+    }
+
     void Start()
     {
         button1.SetActive(false);
         button2.SetActive(false);
         button3.SetActive(false);
+        button4.SetActive(false);
     }
 
     void Update()
