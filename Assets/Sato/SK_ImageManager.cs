@@ -21,7 +21,9 @@ public class SK_ImageManager : MonoBehaviour
     [SerializeField] GameObject _eventObject;
     [SerializeField] GameObject _imagePrefab;
     public SK_ChoiceScript choiceScript;
+    public SK_GameManager GameManager;
     int l = 0;
+    int n = 0;
 
     // テキストファイルから、文字列でSpriteやGameObjectを扱えるようにするための辞書
     Dictionary<string, Sprite> _textToSprite;
@@ -80,5 +82,11 @@ public class SK_ImageManager : MonoBehaviour
         _textToButton[buttonname].SetActive(true);
         choiceScript.changeline=l;
         _textToText[buttonname].text = word;
+    }
+
+    public void ChangeLine(string Line)
+    {
+        n=int.Parse(Line);
+        GameManager.lineNumber = n;
     }
 }

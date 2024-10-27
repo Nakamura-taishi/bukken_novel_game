@@ -54,6 +54,9 @@ public class SK_UserScriptManager : MonoBehaviour
                 case "&choice":
                     SK_GameManager.Instance.imageManager.ShowChoice(words[1], words[2], words[3]);
                     break;
+                case "line":
+                    SK_GameManager.Instance.imageManager.ChangeLine(words[1]);
+                    break;
             }
         }
 }
