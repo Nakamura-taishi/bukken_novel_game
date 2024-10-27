@@ -1747,6 +1747,7 @@ MonoBehaviour:
   _eventObject: {fileID: 1564819222}
   _imagePrefab: {fileID: 6510366724085275176, guid: 9893fff0ee9903b46809c66877831b97, type: 3}
   choiceScript: {fileID: 1482197382}
+  GameManager: {fileID: 957183825}
 --- !u!4 &1747254109
 Transform:
   m_ObjectHideFlags: 0
