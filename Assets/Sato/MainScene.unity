@@ -1432,8 +1432,11 @@ MonoBehaviour:
   button2: {fileID: 534306001}
   button3: {fileID: 728677141}
   button4: {fileID: 1073471884}
-  changeline: 0
-  gameManager: {fileID: 957183825}
+  changeline1: 0
+  changeline2: 0
+  changeline3: 0
+  changeline4: 0
+  GameManager: {fileID: 957183825}
 --- !u!1 &1511832626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1739,11 @@ MonoBehaviour:
   _backgroundObject: {fileID: 960001725}
   _eventCG1: {fileID: 21300000, guid: 9645a080564fe484ca9836a8cc53669f, type: 3}
   _eventCG2: {fileID: 21300000, guid: 9128534ab51fc3b4288254d31d2cff01, type: 3}
+  _eventCG3: {fileID: 21300000, guid: 2fdf632f761a8b4409e0b91df4d1937a, type: 3}
+  _eventCG4: {fileID: 21300000, guid: e2a9fde3e4f590044ac8663d1a5e5c1f, type: 3}
+  _eventCG5: {fileID: 21300000, guid: 7c0b38e6330179646b6e04fee706c423, type: 3}
+  _eventCG6: {fileID: 21300000, guid: 12fdf81dfc114964292e335dace876b8, type: 3}
+  _eventCG7: {fileID: 21300000, guid: 0bda690bac4e22146ac0cf217ffd14ac, type: 3}
   _button1: {fileID: 497741196}
   _button2: {fileID: 534306001}
   _button3: {fileID: 728677141}

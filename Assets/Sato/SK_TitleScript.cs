@@ -10,11 +10,10 @@ public class SK_TitleScript : MonoBehaviour
 
     public void Onclick()
     {
-        SceneManager.LoadScene("MainScene1");
+        SceneManager.LoadScene("MainScene");
     }
     void Start()
     {
-        SceneManager.UnloadScene("MainScene1");
-        SceneManager.UnloadScene("MainScene2");
+        SceneManager.UnloadScene("MainScene");
     }
 }

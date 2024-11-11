@@ -46,15 +46,23 @@ public class SK_UserScriptManager : MonoBehaviour
             {
                 case "&img":
                     SK_GameManager.Instance.imageManager.PutImage(words[1], words[2]);
-                    branch = 1;
                     break;
                 case "&rmimg":
                     SK_GameManager.Instance.imageManager.RemoveImage(words[1]);
                     break;
-                case "&choice":
-                    SK_GameManager.Instance.imageManager.ShowChoice(words[1], words[2], words[3]);
+                case "&choice1":
+                    SK_GameManager.Instance.imageManager.ShowChoice1(words[1], words[2], words[3]);
                     break;
-                case "line":
+                case "&choice2":
+                    SK_GameManager.Instance.imageManager.ShowChoice2(words[1], words[2], words[3]);
+                    break;
+                case "&choice3":
+                    SK_GameManager.Instance.imageManager.ShowChoice3(words[1], words[2], words[3]);
+                    break;
+                case "&choice4":
+                    SK_GameManager.Instance.imageManager.ShowChoice4(words[1], words[2], words[3]);
+                    break;
+                case "&change":
                     SK_GameManager.Instance.imageManager.ChangeLine(words[1]);
                     break;
             }

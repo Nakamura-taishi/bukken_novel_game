@@ -8,30 +8,45 @@ public class SK_ChoiceScript : MonoBehaviour
     public GameObject button2;
     public GameObject button3;
     public GameObject button4;
-    public int changeline;
-    public SK_GameManager gameManager;
+    public int changeline1;
+    public int changeline2;
+    public int changeline3;
+    public int changeline4;
+    public SK_GameManager GameManager;
 
     public void OnClick1()
     {
-        gameManager.lineNumber=changeline;
+        GameManager.lineNumber=changeline1;
         button1.SetActive(false);
+        button2.SetActive(false);
+        button3.SetActive(false);
+        button4.SetActive(false);
     }
 
     public void OnClick2()
     {
-        gameManager.lineNumber=changeline;
+        GameManager.lineNumber=changeline2;
+        button1.SetActive(false);
         button2.SetActive(false);
+        button3.SetActive(false);
+        button4.SetActive(false);
     }
 
     public void OnClick3()
     {
-        gameManager.lineNumber=changeline;
+        GameManager.lineNumber=changeline3;
+        button1.SetActive(false);
+        button2.SetActive(false);
         button3.SetActive(false);
+        button4.SetActive(false);
     }
 
     public void OnClick4()
     {
-        gameManager.lineNumber=changeline;
+        GameManager.lineNumber=changeline4;
+        button1.SetActive(false);
+        button2.SetActive(false);
+        button3.SetActive(false);
         button4.SetActive(false);
     }
 
