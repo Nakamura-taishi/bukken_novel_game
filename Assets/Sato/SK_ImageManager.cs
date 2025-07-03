@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SK_ImageManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class SK_ImageManager : MonoBehaviour
     int l3 = 0;
     int l4 = 0;
     int n = 0;
+    public static int routenumber = 0;
 
     // テキストファイルから、文字列でSpriteやGameObjectを扱えるようにするための辞書
     Dictionary<string, Sprite> _textToSprite;
@@ -129,5 +131,10 @@ public class SK_ImageManager : MonoBehaviour
         Debug.Log("a");
         n=int.Parse(Line);
         GameManager.lineNumber=n;
+    }
+    public void Ending(string route)
+    {
+        routenumber=int.Parse(route);
+        SceneManager.LoadScene("EndScene");
     }
 }

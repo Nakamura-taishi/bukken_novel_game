@@ -65,6 +65,9 @@ public class SK_UserScriptManager : MonoBehaviour
                 case "&change":
                     SK_GameManager.Instance.imageManager.ChangeLine(words[1]);
                     break;
+                case "&end":
+                    SK_GameManager.Instance.imageManager.Ending(words[1]);
+                    break;
             }
         }
 }
