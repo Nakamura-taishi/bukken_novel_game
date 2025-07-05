@@ -12,6 +12,11 @@ public class SK_TitleScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+    public void Finish()
+    {
+        UnityEditor.EditorApplication.isPlaying=false;
+        Application.Quit();
+    }
     void Start()
     {
         //SceneManager.UnloadScene("MainScene");
