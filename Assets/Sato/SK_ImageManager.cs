@@ -16,6 +16,9 @@ public class SK_ImageManager : MonoBehaviour
     [SerializeField] Sprite _eventCG5;
     [SerializeField] Sprite _eventCG6;
     [SerializeField] Sprite _eventCG7;
+    [SerializeField] Sprite _eventCG8;
+    [SerializeField] Sprite _eventCG9;
+    [SerializeField] Sprite _eventCG10;
     [SerializeField] GameObject _button1;
     [SerializeField] GameObject _button2;
     [SerializeField] GameObject _button3;
@@ -58,6 +61,9 @@ public class SK_ImageManager : MonoBehaviour
         _textToSprite.Add("eventCG5", _eventCG5);
         _textToSprite.Add("eventCG6", _eventCG6);
         _textToSprite.Add("eventCG7", _eventCG7);
+        _textToSprite.Add("eventCG8", _eventCG7);
+        _textToSprite.Add("eventCG9", _eventCG7);
+        _textToSprite.Add("eventCG10", _eventCG7);
         _textToButton = new Dictionary<string, GameObject>();
         _textToButton.Add("button1",_button1);
         _textToButton.Add("button2",_button2);
