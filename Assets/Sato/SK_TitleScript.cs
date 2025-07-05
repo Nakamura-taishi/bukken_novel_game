@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class SK_TitleScript : MonoBehaviour
 {
-    [SerializeField] Text nextText;
+    //[SerializeField] Renderer s;
+    //[SerializeField] Renderer f;
 
     public void Onclick()
     {
@@ -19,6 +20,6 @@ public class SK_TitleScript : MonoBehaviour
     }
     void Start()
     {
-        //SceneManager.UnloadScene("MainScene");
+ 
     }
 }
