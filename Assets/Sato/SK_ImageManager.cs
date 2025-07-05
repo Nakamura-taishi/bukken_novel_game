@@ -112,7 +112,7 @@ public class SK_ImageManager : MonoBehaviour
 
     public void ShowChoice3(string buttonname3, string line3, string word3)
     {
-        l1=int.Parse(line3);
+        l3=int.Parse(line3);
         _textToButton[buttonname3].SetActive(true);
         choiceScript.changeline3=l3;
         _textToText[buttonname3].text = word3;
