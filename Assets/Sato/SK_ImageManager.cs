@@ -61,9 +61,9 @@ public class SK_ImageManager : MonoBehaviour
         _textToSprite.Add("eventCG5", _eventCG5);
         _textToSprite.Add("eventCG6", _eventCG6);
         _textToSprite.Add("eventCG7", _eventCG7);
-        _textToSprite.Add("eventCG8", _eventCG7);
-        _textToSprite.Add("eventCG9", _eventCG7);
-        _textToSprite.Add("eventCG10", _eventCG7);
+        _textToSprite.Add("eventCG8", _eventCG8);
+        _textToSprite.Add("eventCG9", _eventCG9);
+        _textToSprite.Add("eventCG10", _eventCG10);
         _textToButton = new Dictionary<string, GameObject>();
         _textToButton.Add("button1",_button1);
         _textToButton.Add("button2",_button2);
