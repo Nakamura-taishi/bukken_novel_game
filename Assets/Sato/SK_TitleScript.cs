@@ -15,7 +15,7 @@ public class SK_TitleScript : MonoBehaviour
     }
     public void Finish()
     {
-        UnityEditor.EditorApplication.isPlaying=false;
+        //UnityEditor.EditorApplication.isPlaying=false;
         Application.Quit();
     }
     void Start()
